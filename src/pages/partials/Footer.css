@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 193px;
+    background-color: #303033;
+    width: 100vw;
+    bottom: 0;
+}
+footer .logo {
+    background-image: url(../../assets/logo-completa.svg);
+    height: 109px;
+    width: 244px;
+}
+@media only screen and (max-width: 900px) {
+    footer {
+        height: 85px;
+        width: 100vw;
+        z-index: 4;
+    }
+    footer .logo {
+        height: 51px;
+        width: 115px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
