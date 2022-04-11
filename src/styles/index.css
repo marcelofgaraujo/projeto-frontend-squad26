@@ -28,10 +28,18 @@ main {
     background-color: #E5E5E5;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     position: relative;
     height: 95vh;
     width: 100vw;
     z-index: 2;
+}
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40vw;
 }
 .main-image {
     background-image: url(../assets/imgs/mesa-trabajo.svg);
@@ -39,7 +47,6 @@ main {
     background-repeat: no-repeat;
     height: 459px;
     width: 688px;
-    margin-left: 25px;
     position: relative;
     margin-top: 35px;
     margin-bottom: 0;
@@ -71,24 +78,30 @@ button {
     width: 121px;
     border-radius: 0px 20px 20px 0px;
     background-color: #4B4FA1;
-    background-image: url(../assets/imgs/vector.svg);
+    background-image: url(../assets/imgs/search.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: 0px;
     cursor: pointer;
 }
 article {
-    margin-top: 100px;
-    margin-left: 50px;
+    margin: 50px 0 0 0;
+    position: relative;
     font-size: 24px;
-    width: 550px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 h3 {
     font-weight: 600;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 ul {
     margin-top:27px;
+    width: 40vw;
+    margin-left: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -149,17 +162,143 @@ footer .logo {
     height: 109px;
     width: 244px;
 }
-@media only screen and (min-width: 1500px) {
-    article {
-        margin-left: 10vw;
+@media only screen and (min-width: 1700px) {
+    h3 {
+        margin-left: -150px;
     }
-    aside {
-        margin-left: 120px;
+    article {
+        margin-left: -200px;
     }
     main {
-        height: 69vh;
+        height: 70vh;
     }
     body {
         overflow-y: hidden;
+    }
+}
+@media only screen and (max-width: 900px) {
+    header {
+        width: 100vw;
+        height: 61px;
+    }
+    header .logo {
+        height: 27px;
+        width: 58px;
+        background-size: contain;
+        margin-left: 30px;
+    }
+    header .avatar {
+        height: 33px;
+        width: 28px;
+        background-size: contain;
+        margin-right: 30px;
+    }
+    main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .main-image {
+        height: 241px;
+        width: 383px;
+        position: relative;
+        margin-top: 0px;
+    }
+    form {
+        width: 100vw;
+        height: 46px;
+        display: flex;
+        flex-direction: row;
+    }
+    form input {
+        display: flex;
+        justify-content: space-around;
+    }
+    form button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input, button {
+        height: 46px;
+        font-size: 12px;
+        background-size: 21px;
+        position: relative;
+    }
+    input {
+        margin: 20px 30px 0 30px;
+        width: 287px;
+    }
+    button {
+        margin: 20px 0 0 -30px;
+        width: 68px;
+    }
+    .suggestion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin: 30px 0 0 0;
+    }
+    .suggestion strong {
+        font-size: 14px;
+    }
+    .suggestion div {
+        font-size: 10px;
+        height: 24px;
+        width: 80px;
+    }
+    article {
+        margin: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+    }
+    article .list {
+        height: 34px;
+        font-size: 14px;
+        width: 90vw;
+        background-size: 25px;
+        margin-left: -130px;
+        margin-bottom: 13px;
+        padding-left: 35px;
+    }
+    h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    article ul {
+        margin-top: 10px;
+    }
+    .hiddenBar {
+        width: 3px;
+        height: 191px;
+        margin-left: -118px;
+    }
+    footer {
+        height: 85px;
+        width: 100vw;
+        z-index: 4;
+    }
+    footer .logo {
+        height: 51px;
+        width: 115px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (min-width: 600px) {
+        main {
+            height: 150vh;
+            width: 100vw;
+        }
+        input {
+            margin-left: 25vw;
+        }
     }
 }

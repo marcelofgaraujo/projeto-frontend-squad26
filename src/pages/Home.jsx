@@ -13,7 +13,7 @@ function Home() {
         <aside>
           <div className='main-image' />
           <form method='GET'>
-          <input type={'search'} placeholder='O que você procura?' />
+          <input type={'search'} placeholder='O que você procura?' maxLength={35} />
           <button type='submit'></button>
           </form>
           <section className='suggestion'>
