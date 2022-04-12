@@ -1,6 +1,5 @@
 footer {
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
     height: 193px;
@@ -17,7 +16,7 @@ footer .logo {
     footer {
         height: 85px;
         width: 100vw;
-        z-index: 4;
+        
     }
     footer .logo {
         height: 51px;

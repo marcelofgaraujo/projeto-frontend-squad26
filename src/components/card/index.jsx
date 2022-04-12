@@ -1,20 +1,21 @@
 import { useState, useEffect } from 'react'
 import './style.css'
+import axios from 'axios'
 
 function Card() {
-    const [user, setUser] = useState({ name:'', avatar:''})
+    const [user, setUser] = useState([])
     useEffect(() => {
         fetch('https://api.github.com/users/marcelofgaraujo')
-        .then(response => response.json())
+        .then (response => response.json())
         .then(data => {
         setUser ({
             name: data.name,
             avatar: data.avatar_url,
-            bio: data.bio,
-            skill_1: data.type,
-            skill_2: data.node_id,
-            skill_3: data.public_repos,
-            skill_4: data.id
+            bio: data.created_at,
+            skill_1: data.public_repos,
+            skill_2: data.id,
+            skill_3: data.following,
+            skill_4: data.node_id
         })
 
         })
@@ -22,10 +23,11 @@ function Card() {
 
     return (
         <div className='card'>
-            <img className='userAvatar' src={user.avatar}>
-            </img>
+            <img className='userAvatar' src={user.avatar}/>
+            <div className='online'><p>ONLINE</p></div>
+            <div className='profile'>
             <strong>{user.name}</strong>
-            <small>{user.bio}</small>
+            <small>{user.bio}</small></div>
             <div className='skills'>
             <div className='content'>
                 <p>{user.skill_1}</p><div className="skillbar1"/></div>

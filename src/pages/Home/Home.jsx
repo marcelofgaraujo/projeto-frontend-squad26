@@ -5,16 +5,15 @@ import Footer from '../partials/Footer'
 import { Link } from 'react-router-dom'
 
 function Home() {
-
   return (
     <>
       <Header />
       <main className='mainHome'>
         <aside>
           <div className='main-image' />
-          <form method='GET'>
+          <form method=''>
           <input type={'search'} placeholder='O que você procura?' maxLength={35} />
-          <button className='searchBtn' type='submit'><Link to="/search"></Link></button>
+          <Link to="/search"><button className='searchBtn' type='button' /></Link>
           </form>
           <section className='suggestion'>
           <strong>Sugestões:</strong>

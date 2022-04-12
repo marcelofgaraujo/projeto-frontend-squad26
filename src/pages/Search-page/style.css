@@ -1,13 +1,5 @@
-/*body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-}*/
 .mainSearch {
     background-color: #F3F4F9;
-    flex-grow: 5;
-    height: 230vh;
-    position: relative;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -16,7 +8,7 @@
     justify-content: center;
 }
 .mainSearch .cards {
-    height: 100vh;
+    margin-bottom: 20px;
     width: 100vw;
     gap: 32px;
     display: flex;
@@ -25,11 +17,10 @@
     justify-content: center;
 }
 section {
+    margin-top: 30px;
     width: 100vw;
     display: flex;
-    position: relative;
     align-items: center;
-    margin-top: -800px;
     margin-bottom: 100px;
 }
 section span {
@@ -52,4 +43,28 @@ section span {
     color: #F3F4F9;
     margin-left: 100px;
     border-radius: 5px;
+}
+@media only screen and (max-width: 900px) {
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 90px;
+    }
+    section .newSearch {
+        font-size: 14px;
+        height: 44px;
+        width: 142px;
+    }
+    section span {
+        font-size: 18px;
+        width: 80vw;
+        justify-content: flex-start;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 8px !important;
+    }
 }

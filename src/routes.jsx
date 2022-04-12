@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes as Server, Route, BrowserRouter } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Search from "./pages/Search-page"
+import Home from "./pages/Home/Home";
+import Search from "./pages/Search-page/Search"
 
 const Routes = () => {
     return (
