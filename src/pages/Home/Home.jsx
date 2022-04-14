@@ -1,19 +1,20 @@
 import { useState } from 'react'
 import './style.css'
-import Header from '../partials/Header'
-import Footer from '../partials/Footer'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
 
 function Home() {
+
   return (
     <>
       <Header />
       <main className='mainHome'>
         <aside>
           <div className='main-image' />
-          <form method=''>
-          <input type={'search'} placeholder='O que você procura?' maxLength={35} />
-          <Link to="/search"><button className='searchBtn' type='button' /></Link>
+          <form className='searchForm' method=''>
+          <input className='searchInput' type={'search'} placeholder='O que você procura?' onChange={(e) => this.inputParams(e)} maxLength={35} />
+          <Link to='/search' ><button className='searchBtn' type='button' /></Link>
           </form>
           <section className='suggestion'>
           <strong>Sugestões:</strong>

@@ -1,0 +1,141 @@
+.bodyDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3F4F9;
+}
+.chat-box {
+    height: 680px;
+    width: 465px;
+    border-radius: 0px 50px 0px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    margin: 50px 0;
+}
+.headerChat {
+    height: 95px;
+    background-color: #FE885C;
+    border-radius: 0px 50px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #F3F4F9;
+}
+.user-chat {
+    height: 57px;
+    width: 57px;
+    border-radius: 50px;
+    border: 3px solid #4B4FA1;
+    margin-left: 8px;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 17px;
+}
+.user-name {
+    font-size: 24px;
+}
+.user-role {
+    font-size: 16px;
+}
+.chat-body {
+    height: 497px;
+}
+.message {
+    height: 89px;
+    width: 385px;
+    text-indent: 20px;
+    font-size: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.05);
+    outline: 0px;
+}
+.message::placeholder {
+    font-size: 16px;
+}
+.send-message {
+    background-image: url(../../assets/send-message.svg);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 89px;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    position: absolute;
+}
+.outside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+.change-page {
+    height: 77px;
+    width: 216px;
+    background-color: #FC6027;
+    font-size: 24px;
+    color: #F3F4F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.link-search {
+    text-decoration-color: #FC6027;
+}
+@media only screen and (max-width: 900px) {
+    .chat-box {
+        height: 412px;
+        width: 290px;
+    }
+    .user-chat {
+        height: 35px;
+        width: 35px;
+        margin-left: 22px;
+    }
+    .user-name {
+        font-size: 18px;
+    }
+    .user-role {
+        font-size: 14px;
+    }
+    .user-info {
+        margin-left: 10px;
+    }
+    .headerChat {
+        height: 58px;
+    }
+    .chat-body {
+        height: 300px;
+    }
+    .message {
+        height: 54px;
+        width: 235px;
+        text-indent: 6px;
+        font-size: 15px;
+    }
+    .send-message {
+        height: 54px;
+        width: 54px;
+        background-size: 30px;
+    }
+    .message::placeholder {
+        font-size: 14px;
+    }
+    .change-page {
+        height: 56px;
+        width: 150px;
+        font-size: 18px;
+    }
+    .outside {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,216 @@
+.loginBody {
+    margin: 0;
+    height: auto;
+    width: auto;
+    background-color: #f3f4f9;
+}
+.headerLogin {
+    height: 100px;
+    width: 100vw;
+    background-color: #FE4400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.logoLogin {
+    background-image: url(../../assets/logo-menor.svg);
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 188px;
+}
+.makeLogin {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.headerDiv {
+    width: 610px;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin: 86px 0 24px 0;
+}
+.formSection {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.guest-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 497px;
+    background-color: #FFFFFF;
+    width: 610px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 1px 8px 8px rgba(128, 128, 128, 0.253);
+}
+label {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    margin-right: 370px;
+}
+.email-login, .pass-login {
+    width: 444px;
+    height: 50px;
+    border: 0px;
+    outline: none;
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 15px;
+    text-indent: 10px;
+}
+.line-input {
+    height: 1px;
+    background-color: #303033;
+    width: 444px;
+    margin-bottom: 0px;
+    position: absolute;
+}
+.line-input2 {
+    height: 1px;
+    background-color: #303033;
+    width: 444px;
+    margin-bottom: 250px;
+    position: absolute;
+}
+.loginBtn {
+    height: 77px;
+    width: 216px;
+    background-color: #FC6027;
+    font-size: 24px;
+    color: #f3f4f9;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 44px;
+    margin-bottom: 40px;
+}
+.under {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.clap {
+    background-image: url(../../assets/hifive.svg);
+    height: 450px;
+    width: 674px;
+}
+.vantages {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    color: #303033;
+    margin-top: 130px;
+}
+.vantages h3 {
+    font-size: 32px;
+}
+.divVantages {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    width: 550px;
+    height: 60px;
+    margin-bottom: 45px;
+    margin-left: 20px;
+    padding-left: 50px;
+    background-image: url(../../assets/checked.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 37px;
+}
+.u-list {
+    padding: 0;
+}
+@media only screen and (max-width: 900px) {
+    .headerLogin {
+        width: 100vw;
+        height: 61px;
+    }
+    .logoLogin {
+        height: 27px;
+        width: 58px;
+        background-size: contain;
+    }
+    .loginBody {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .headerDiv {
+        font-size: 17px;
+        width: 100vw;
+        margin-top: 24px;
+        margin-bottom: 17px;
+    }
+    .guest-card {
+        height: 302px;
+        width: 354px;
+    }
+    .email-login, .pass-login {
+        width: 268px;
+        margin-bottom: 26px;
+        font-size: 14px;
+        height: 25px;
+        text-indent: 3px;
+    }
+    label {
+        font-size: 14px;
+        margin-right: 55vw;
+    }
+    .loginBtn {
+        height: 47px;
+        width: 100px;
+        font-size: 14px;
+        margin: 0;
+    }
+    .forgot {
+        font-size: 14px;
+        margin-top: 18px;
+    }
+    .clap {
+        height: 132px;
+        width: 197px;
+        background-size: contain;
+        margin: 0;
+    }
+    .vantages {
+        width: 40vw;
+        margin: 0 0 20px 0;
+    }
+    .vantages h3 {
+        font-size: 14px;
+        margin: 20px 0 0 0;
+    }
+    .divVantages {
+        font-size: 12px;
+        width: 46vw;
+        margin: 0;
+        background-size: 20px;
+        padding: 25px;
+    }
+    .u-list {
+        margin: 0;
+    }
+    .line-input, .line-input2 {
+        width: 268px;
+    }
+    .line-input {
+        margin-bottom: 0;
+        margin-top: 35px;
+    }
+    .line-input2 {
+        margin-bottom: 133px;
+    }
+}

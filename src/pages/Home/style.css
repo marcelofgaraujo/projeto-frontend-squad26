@@ -29,12 +29,12 @@ aside {
     margin-top: 35px;
     margin-bottom: 0;
 }
-form {
+.searchForm {
     display: flex;
     justify-content: center;
     margin-left: -70px;
 }
-input {
+.searchInput {
     height: 60px;
     width: 487px;
     border-radius: 20px 0px 0px 20px;
@@ -50,7 +50,7 @@ input {
     padding: 0;
     text-indent: 20px;
 }
-input::placeholder {
+.searchInput::placeholder {
     color: black;
 }
 .searchBtn {
@@ -155,28 +155,28 @@ ul {
         position: relative;
         margin-top: 0px;
     }
-    form {
+    .searchForm {
         width: 120vw;
         height: 46px;
         display: flex;
         flex-direction: row;
     }
-    form input {
+    .searchInput {
         display: flex;
         justify-content: space-around;
     }
-    form .searchBtn {
+    .searchForm .searchBtn {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    input, .searchBtn {
+    .searchInput, .searchBtn {
         height: 46px;
         font-size: 12px;
         background-size: 21px;
         position: relative;
     }
-    input {
+    .searchInput {
         margin: 20px 30px 0 70px;
         width: 287px;
     }
@@ -233,7 +233,7 @@ ul {
             height: 150vh;
             width: 100vw;
         }
-        input {
+        .searchInput {
             margin-left: 25vw;
         }
     }

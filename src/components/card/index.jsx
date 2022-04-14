@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './style.css'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 function Card() {
@@ -26,8 +27,8 @@ function Card() {
             <img className='userAvatar' src={user.avatar}/>
             <div className='online'><p>ONLINE</p></div>
             <div className='profile'>
-            <strong>{user.name}</strong>
-            <small>{user.bio}</small></div>
+            <strong className='userName'>{user.name}</strong>
+            <small className='userBio'>{user.bio}</small></div>
             <div className='skills'>
             <div className='content'>
                 <p>{user.skill_1}</p><div className="skillbar1"/></div>
@@ -37,7 +38,7 @@ function Card() {
                 <p>{user.skill_3}</p><div className="skillbar3"/></div>
             <div className='content'>
                 <p>{user.skill_4}</p><div className="skillbar4"/></div>
-            <div className='button'>VER PERFIL</div>
+            <Link to='/profile' ><div className='button'>VER PERFIL</div></Link>
             </div>
         </div>
     )

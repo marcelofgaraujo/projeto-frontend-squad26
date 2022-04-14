@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
-import Header from '../partials/Header'
-import Footer from '../partials/Footer'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
 import Card from '../../components/card'
-import '../../components/card/style.css'
 import './style.css'
 import axios from 'axios'
 
@@ -42,7 +41,7 @@ function Search () {
         <Header />
         <main className='mainSearch'>
             <section>
-                <div className='newSearch'>NOVA BUSCA</div>
+                <Link to='/home'><div type='button' className='newSearch'><p>NOVA BUSCA</p></div></Link>
                 <span>Acessibilidade</span>
             </section>
             <div className='cards'>

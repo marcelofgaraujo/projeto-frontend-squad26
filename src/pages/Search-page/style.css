@@ -35,14 +35,17 @@ section span {
     height: 77px;
     width: 216px;
     background-color: #FC6027;
-    font-size: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #F3F4F9;
     margin-left: 100px;
     border-radius: 5px;
+}
+.newSearch > p {
+    font-size: 24px;
+    color: #F3F4F9;
+    text-decoration: none;
 }
 @media only screen and (max-width: 900px) {
     section {
@@ -52,7 +55,7 @@ section span {
         align-items: center;
         margin-right: 90px;
     }
-    section .newSearch {
+    .newSearch {
         font-size: 14px;
         height: 44px;
         width: 142px;
