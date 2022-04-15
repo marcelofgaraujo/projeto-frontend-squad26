@@ -2,24 +2,13 @@ import { useState, useEffect } from 'react'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
-import Card from '../../components/card'
+import Card from '../../components/card/card-modelo'
 import './style.css'
 import axios from 'axios'
 
 function Search() {
 
   const [usuario, setUsers] = useState([]);
-  const [q, setQ] = useState('')
- /* const [searchParam] = useState(['name', 'capital'])
-  function search() {
-    return items.filter((item) => {
-      return searchParam.some((newItem) => {
-        return (
-          item[newItem]?.toString()?.toLowerCase()?.indexOf(q.toLowerCase()) > -1
-        )
-      })
-    })
-  }*/
 
   useEffect(() => {
     axios.get('http://localhost:5000/users')

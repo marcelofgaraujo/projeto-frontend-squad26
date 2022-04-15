@@ -14,13 +14,13 @@ function Home() {
           <div className='main-image' />
           <form className='searchForm' method=''>
           <input className='searchInput' type={'search'} placeholder='O que você procura?' onChange={(e) => this.inputParams(e)} maxLength={35} />
-          <Link to='/search' ><button className='searchBtn' type='button' /></Link>
+          <button className='searchBtn' type='button' />
           </form>
           <section className='suggestion'>
           <strong>Sugestões:</strong>
-          <div>Acessibilidade</div>
-          <div>React</div>
-          <div>Scrum</div>
+          <Link to='/search-acessibilidade'><div>Acessibilidade</div></Link>
+          <Link to='/search-figma'><div>Figma</div></Link>
+          <Link to='/search-node'><div>Node</div></Link>
           </section>
         </aside>
         <article>

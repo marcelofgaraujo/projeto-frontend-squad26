@@ -41,6 +41,8 @@
     border-radius: 500px;
     border: 13px solid #4B4FA1;
     margin-left: 100px;
+    object-fit: cover;
+    object-position: top;
 }
 ._profile h3, .xp h3, .recomendations h3 {
     font-size: 32px;
@@ -233,6 +235,14 @@
         margin: 400px 0 0 0;
         right: auto;
     }
+    .goto {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        position: absolute;
+    }
     .line {
         height: 0;
         width: 0;
@@ -281,6 +291,7 @@
         height: 70px;
         width: 300px;
         margin: 0;
+        /*margin: 0 13vw 0 13vw;*/
     }
     .contain {
         display: flex;

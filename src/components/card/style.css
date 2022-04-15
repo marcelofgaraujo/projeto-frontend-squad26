@@ -4,6 +4,8 @@
     width: 159px;
     border-radius: 500px;
     border: 13px solid #4B4FA1;
+    object-fit: cover;
+    object-position: top;
     align-items: center;
     justify-content: center;
     margin-top: 27px;

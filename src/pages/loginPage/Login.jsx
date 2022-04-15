@@ -1,5 +1,6 @@
 import './style.css'
 import Footer from '../../components/footer/Footer'
+import { Link } from 'react-router-dom'
 
 function Login() {
     return (
@@ -18,7 +19,7 @@ function Login() {
                     <input className='email-login' type={'email'} name='email' maxLength={50} /><div className='line-input' />
                     <label for='password'>Senha</label>
                     <input className='pass-login' type={'password'} name='password' maxLength={35} /><div className='line-input2'/>
-                    <button className='loginBtn' type='button'>ENTRAR</button>
+                    <Link to='/chat'><button className='loginBtn' type='button'>ENTRAR</button></Link>
                     <a className='forgot' href=''>Esqueci a senha</a>
                 </form>
             </section>

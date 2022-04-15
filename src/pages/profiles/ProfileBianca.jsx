@@ -1,6 +1,7 @@
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import './style.css'
+import { Link } from 'react-router-dom'
 
 function Profile() {
 
@@ -10,15 +11,15 @@ function Profile() {
             <main className='mainProfile'>
                 <section className='header'>
                     <p className='navHistory'>Home / Acessibilidade / Bianca Andrade</p>
-                    <p className='back'><div className='arrow'>⃖</div> Voltar</p>
+                    <Link to='/search-acessibilidade'><p className='back'><div className='arrow'>⃖</div> Voltar</p></Link>
                 </section>
                 <section className='_profile'>
-                    <img className='avatarProfile' src="https://static1.purepeople.com.br/articles/3/31/72/83/@/3581814-gravida-de-6-meses-bianca-andrade-exibe-624x600-1.jpg" />
+                    <img className='avatarProfile' src="https://jxlgurzscxuwmhhtszfm.supabase.co/storage/v1/object/public/hackathon-s03/perfil/biancaandrade.jpg" />
                     <div className='infos'>
                         <h3>Bianca Andrade</h3>
                         <p className='role'>UX/UI Designer</p>
                         <a className='linkedin' href='https://www.linkedin.com' target={'_blank'}>Linkedin</a></div>
-                    <div className='messageBtn'>ENVIAR MENSAGEM</div>
+                    <Link className='goto' to='/login'><div className='messageBtn'>ENVIAR MENSAGEM</div></Link>
                 </section>
                 <div className='line' />
                 <section className='experience'>

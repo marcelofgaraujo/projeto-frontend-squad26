@@ -1,0 +1,43 @@
+header {
+    height: 100px;
+    width: 100vw;
+    background-color: #FE4400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo {
+    margin-left: 100px;
+    background-image: url(../../assets/logo-menor.svg);
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 188px;
+}
+.avatarlogado {
+    background-image: url(../../assets/user-chat.png);
+    height: 48px;
+    width: 52px;
+    border-radius: 40px;
+    margin-right: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 900px) {
+    header {
+        width: 100vw;
+        height: 61px;
+    }
+    header .logo {
+        height: 27px;
+        width: 58px;
+        background-size: contain;
+        margin-left: 30px;
+    }
+    header .avatarlogado {
+        height: 33px;
+        width: 33px;
+        background-size: contain;
+        margin-right: 30px;
+    }
+}
