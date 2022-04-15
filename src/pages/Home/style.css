@@ -6,8 +6,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    position: relative;
-    height: 95vh;
     width: 100vw;
     z-index: 2;
 }
@@ -25,7 +23,6 @@ aside {
     background-repeat: no-repeat;
     height: 459px;
     width: 688px;
-    position: relative;
     margin-top: 35px;
     margin-bottom: 0;
 }
@@ -66,7 +63,6 @@ aside {
 }
 article {
     margin: 50px 0 0 0;
-    position: relative;
     font-size: 24px;
     width: 40vw;
     display: flex;
@@ -74,9 +70,8 @@ article {
     align-items: center;
     justify-content: center;
 }
-h3 {
+article h3 {
     font-weight: 600;
-    margin-left: 20px;
 }
 ul {
     margin-top:27px;
@@ -88,7 +83,6 @@ ul {
 }
 .list {
     display: flex;
-    position: relative;
     align-items: center;
     font-weight: 400;
     height: 58px;
@@ -97,6 +91,7 @@ ul {
     background-image: url(../../assets/orange.svg);
     background-repeat: no-repeat;
     background-position: left;
+    z-index: 1;
 }
 .suggestion {
     display: flex;
@@ -104,6 +99,7 @@ ul {
     font-size: 16px;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 100px;
     align-items: center;
     gap: 24px;
 }
@@ -126,46 +122,40 @@ ul {
     position: absolute;
     margin-left: 20px;
     margin-top: 10px;
+    z-index: 0;
 }
 @media only screen and (min-width: 1700px) {
-    h3 {
-        margin-left: -150px;
-    }
-    article {
-        margin-left: -200px;
+    article h3 {
+        text-align: left;
+        width: 670px;
     }
     .mainHome {
-        height: 80vh;
         overflow: hidden;
     }
 }
 @media only screen and (max-width: 900px) {
     .mainHome {
-        width: 100vw;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: relative;
         overflow: hidden;
     }
     .main-image {
         height: 241px;
         width: 383px;
-        position: relative;
         margin-top: 0px;
     }
     .searchForm {
-        width: 120vw;
+        width: 100vw;
         height: 46px;
         display: flex;
         flex-direction: row;
+        width: 100vw;
+        justify-content: center;
     }
-    .searchInput {
-        display: flex;
-        justify-content: space-around;
-    }
-    .searchForm .searchBtn {
+    .searchBtn {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -174,7 +164,6 @@ ul {
         height: 46px;
         font-size: 12px;
         background-size: 21px;
-        position: relative;
     }
     .searchInput {
         margin: 20px 30px 0 70px;
@@ -232,9 +221,6 @@ ul {
         .mainHome {
             height: 150vh;
             width: 100vw;
-        }
-        .searchInput {
-            margin-left: 25vw;
         }
     }
 }

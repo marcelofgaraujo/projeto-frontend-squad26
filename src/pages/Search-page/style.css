@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
 }
-.mainSearch .cards {
+.cards {
     margin-bottom: 20px;
     width: 100vw;
     gap: 32px;
@@ -16,14 +16,14 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-section {
+.top {
     margin-top: 30px;
     width: 100vw;
     display: flex;
     align-items: center;
     margin-bottom: 100px;
 }
-section span {
+.top span {
     display: flex;
     text-align: center;
     margin-left: 42vw;
@@ -41,14 +41,14 @@ section span {
     justify-content: center;
     margin-left: 100px;
     border-radius: 5px;
-}
-.newSearch > p {
     font-size: 24px;
     color: #F3F4F9;
+}
+a {
     text-decoration: none;
 }
 @media only screen and (max-width: 900px) {
-    section {
+    .top {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -60,7 +60,7 @@ section span {
         height: 44px;
         width: 142px;
     }
-    section span {
+    .top span {
         font-size: 18px;
         width: 80vw;
         justify-content: flex-start;

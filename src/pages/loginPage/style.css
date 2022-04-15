@@ -54,8 +54,8 @@
 label {
     font-size: 24px;
     font-weight: 600;
+    width: 444px;
     text-align: left;
-    margin-right: 370px;
 }
 .email-login, .pass-login {
     width: 444px;
@@ -167,7 +167,7 @@ label {
     }
     label {
         font-size: 14px;
-        margin-right: 55vw;
+        width: 268px;
     }
     .loginBtn {
         height: 47px;

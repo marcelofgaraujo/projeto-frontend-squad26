@@ -1,8 +1,9 @@
-.bodyDiv {
+.mainChat {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #F3F4F9;
+    justify-content: center;
 }
 .chat-box {
     height: 680px;
@@ -20,6 +21,7 @@
     flex-direction: row;
     align-items: center;
     color: #F3F4F9;
+    margin-bottom: 20px;
 }
 .user-chat {
     height: 57px;
@@ -41,7 +43,10 @@
     font-size: 16px;
 }
 .chat-body {
-    height: 497px;
+    height: 477px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .message {
     height: 89px;
@@ -88,10 +93,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.link-search {
-    text-decoration-color: #FC6027;
-}
 @media only screen and (max-width: 900px) {
+    .mainChat {
+        height: 90vh;
+    }
     .chat-box {
         height: 412px;
         width: 290px;
@@ -112,9 +117,10 @@
     }
     .headerChat {
         height: 58px;
+        margin-bottom: 10px;
     }
     .chat-body {
-        height: 300px;
+        height: 290px;
     }
     .message {
         height: 54px;
