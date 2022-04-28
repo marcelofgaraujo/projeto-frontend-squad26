@@ -1,5 +1,5 @@
 import './style.css'
-import Footer from '../../components/footer/Footer'
+import Footer from '../../components/footer/footer'
 import { Link } from 'react-router-dom'
 
 function Login() {
