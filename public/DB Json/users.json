@@ -1,0 +1,102 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Marcelinho Carioca",
+            "bio": "Front-end Junior",
+            "avatar": "https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/marcelinho_carioca.jpg",
+            "online": true,
+            "skill_1": "ReactJS",
+            "skill_2": "VueJS",
+            "skill_3": "CSS",
+            "skill_4": "Futebol",
+            "xp": "Joguei bola pra carai, aí aposentei, gastei meu dinheiro tudo e agora aprendi programaçao aqui no grupo FCamara!",
+            "rec": "Voxê é um safado!!",
+            "recAuthor": "--  Vanderlei Luxemburgo"
+        },
+        {
+            "id": 2,
+            "name": "Vanderlei Luxemburgo",
+            "bio": "Back-end Senior",
+            "avatar": "https://s2.glbimg.com/Ol35Jsk0a1eDVcT0wDkz8QNvB74=/0x0:2000x1331/1008x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2019/11/28/rib5180_ZrQIc0I.jpg",
+            "online": false,
+            "skill_1": "NodeJS",
+            "skill_2": "PHP",
+            "skill_3": "Laravel",
+            "skill_4": "PostgreSQL",
+            "xp": "O Marcelinho Carioca eu não tenho o prazer de ser amigo dele e nem quero ser.",
+            "rec": "Eu acho o Vanderlei Luxemburgo o melhor treinador do Brasil, senao do mundo!",
+            "recAuthor": "--  Marcelinho Carioca"
+        },
+        {
+            "id": 3,
+            "name": "Celso Roth",
+            "bio": "Retranqueiro Senior",
+            "avatar": "https://pbs.twimg.com/media/DAER79rXoAEE_IU.jpg",
+            "online": true,
+            "skill_1": "Park the Bus",
+            "skill_2": "4 zagueiros",
+            "skill_3": "4 volantes",
+            "skill_4": "2 ST",
+            "xp": "Eu adoro uma retranca!",
+            "rec": "Bem retranqueiro mesmo!",
+            "recAuthor": "--  Roger Flores"
+        },
+        {
+            "id": 4,
+            "name": "Bill Gates",
+            "bio": "Back-end Junior",
+            "avatar": "https://jpimg.com.br/uploads/2019/09/serie-bill-gates-netflix.png",
+            "online": true,
+            "skill_1": "C",
+            "skill_2": "Cobol",
+            "skill_3": "Assembly",
+            "skill_4": "FireBird",
+            "xp": "Eu frago um pouquinho de programação de computadores!",
+            "rec": "Ele fraga um pouco de programação mesmo",
+            "recAuthor": "--  Neymar Junior"
+        },
+        {
+            "id": 5,
+            "name": "Junior Junior",
+            "bio": "Back-end Junior Pleno",
+            "avatar": "https://imagem.natelinha.uol.com.br/original/junioreuapatroa2_40fb41f4809eeef80fcc9badb0b878e6a1b3ccb7.jpeg",
+            "online": false,
+            "skill_1": "PHP",
+            "skill_2": "NodeJS",
+            "skill_3": "AdonisJS",
+            "skill_4": "HTML",
+            "xp": "Aprendi a programar na raça aí e quero agradecer ao grupo FCamara aí pela oportunidade e vamo pra cima que tem a volta lá no barradão e a gente vai conquistar aí os 3 pontos!",
+            "rec": "Ele é pleno apesar de ser junior e o nome ser junior junior",
+            "recAuthor": "--  Michael Kyle"
+        },
+        {
+            "id": 6,
+            "name": "Kerlon Foquinha",
+            "bio": "Analista de dados pleno",
+            "avatar": "https://www.otempo.com.br/polopoly_fs/3.245725.1534217089!httpImage/image.jpg_gen/derivatives/new-layout-article-photo-gallery-fit_930/image.jpg",
+            "online": false,
+            "skill_1": "MySQL",
+            "skill_2": "PostgreSQL",
+            "skill_3": "NodeJS",
+            "skill_4": "CRUD",
+            "xp": "Futebol deu meio errado né, machuquei pra carai, aí tive q ir pra uma profissao q nao usasse tanto as perna! Tá dando certo mas tive uma lesão no ligamento do mindinho e precisarei ficar aí 3 semanas fora mas jajá volto com tudo!",
+            "rec": "Esse cara machuca demais mas com muita persistencia tudo é possivel",
+            "recAuthor": "--  Dr Paulo Muzy"
+        },
+        {
+            "id": 7,
+            "name": "Sergio Santos",
+            "bio": "Presidente Youtuber",
+            "avatar": "https://s2.glbimg.com/6N0M2eiVk18WhDOJpBEkvEk7jeQ=/0x19:400x316/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/Q/o/jAuN3GRwClC2l48xJA0g/whatsapp-image-2020-05-13-at-17.53.07.jpeg",
+            "online": true,
+            "skill_1": "Youtube",
+            "skill_2": "Mindset",
+            "skill_3": "Linkedin",
+            "skill_4": "Coach",
+            "xp": "Mindset linkedin coach quantico! Qual sua desculpa hoje?",
+            "rec": "Ele é muito mindset linkedin coach quantico mas é gente boa",
+            "recAuthor": "--  Beneci (RIP)"
+        }
+    ]
+}
