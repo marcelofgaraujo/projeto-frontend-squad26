@@ -46,9 +46,7 @@
 }
 .chat-body {
     height: 477px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    overflow-y: auto;
 }
 .message {
     height: 89px;
@@ -94,6 +92,14 @@
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
+}
+.confirmed {
+    background-image: url(../../assets/confirmed.svg);
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 50px auto 20px auto;
 }
 @media only screen and (max-width: 900px) {
     .mainChat {
@@ -145,5 +151,10 @@
     }
     .outside {
         margin-bottom: 50px;
+    }
+    .confirmed {
+        height: 150px;
+        width: 150px;
+        margin: 30px auto 10px auto;
     }
 }

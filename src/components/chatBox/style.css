@@ -1,15 +1,18 @@
 .chat {
     display: flex;
-    flex-direction: row-reverse;
     gap: 14px;
     align-items: center;
+    margin: 7px 0px;
+    justify-content: flex-end;
+    width: 100%;
 }
 .msg {
     background: rgba(75, 79, 161, 0.2);
     border-radius: 20px;
     font-size: 16px;
-    margin: 10px 70px 10px 100px;
     padding: 10px 20px;
+    word-break: break-all;
+    max-width: 70%;
 }
 .user-chat-image {
     background-image: url(../../assets/user-chat.png);
@@ -19,34 +22,14 @@
     background-size: cover;
     border: 3px solid #4B4FA1;
     border-radius: 60px;
-    position: absolute;
     margin-right: 10px;
-}
-.confirmed {
-    background-image: url(../../assets/confirmed.svg);
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    margin: 150px 85px 20px 85px;
 }
 @media only screen and (max-width: 900px) {
     .msg {
         font-size: 13px;
-        margin: 8px 45px 8px 50px;
     }
     .user-chat-image {
         height: 35px;
         width: 35px;
-        margin-right: 5px;
-    }
-    .confirmed {
-        height: 150px;
-        width: 150px;
-        margin: 130px 70px 0 70px;
     }
 }
